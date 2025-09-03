@@ -1,0 +1,31 @@
+.header-search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+
+  &__label {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__input {
+    width: 100%;
+    color: var(--color-primary);
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: var(--color-secondary);
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    aspect-ratio: 1;
+  }
+}

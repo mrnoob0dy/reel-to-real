@@ -1,0 +1,43 @@
+.header-btn {
+  width: 237px;
+  display: inline-flex;
+  align-self: center;
+  gap: 12px;
+  padding: 20px 24px;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  border-right: 1px solid var(--color-neutral-muted);
+  transition: 0.3s color ease-in;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid currentColor;
+  }
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.header-btn__burger {
+  display: flex;
+  align-self: center;
+  width: 16px;
+  height: 10px;
+}
+
+.header-btn__angel {
+  display: flex;
+  margin-left: auto;
+  width: 16px;
+  height: 17px;
+}

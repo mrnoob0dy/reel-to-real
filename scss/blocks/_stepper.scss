@@ -1,0 +1,41 @@
+.stepper {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: 84px;
+  padding: 8px;
+  background-color: var(--color-neutral-muted);
+}
+
+.stepper__minus {
+  display: flex;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.stepper__input {
+  width: 20px;
+  height: 12px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.stepper__plus {
+  display: flex;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.stepper__disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}

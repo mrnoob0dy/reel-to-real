@@ -1,9 +1,46 @@
 body {
   font-family: var(--font-family);
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
   padding: 0 24px;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 12;
+  background-color: rgba(26, 26, 26, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.simplebar-track.simplebar-vertical {
+  right: 4px;
+  width: 4px;
+  background-color: var(--color-surface-subtle);
+  border-radius: 10px;
+}
+
+.simplebar-scrollbar {
+  &::before {
+    inset: 0 !important;
+    opacity: 1 !important;
+    background-color: var(--color-secondary) !important;
+    border-radius: 10px;
+  }
+}
+
+.simplebar-content::after,
+.simplebar-content::before {
+  display: none;
 }

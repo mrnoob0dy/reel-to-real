@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REEL TO REAL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="overlay"></div>
     <div class="mini-cart">
       <div class="mini-cart__top">
         <h2 class="mini-cart__title">
@@ -23,7 +25,7 @@
         </button>
       </div>
       <div class="mini-cart__content">
-        <div class="mini-cart__products">
+        <div class="mini-cart__products" data-simplebar>
           <article class="mini-cart-product">
             <div class="mini-cart-product__top">
               <img
@@ -238,6 +240,7 @@
       </div>
     </header>
 
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

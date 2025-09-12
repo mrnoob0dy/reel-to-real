@@ -1,3 +1,5 @@
+import { closeAllPopups } from "../functions/closeAllPopups.js";
+
 const miniCart = document.querySelector(".mini-cart");
 
 if (miniCart) {
@@ -6,6 +8,7 @@ if (miniCart) {
   const overlay = document.querySelector(".overlay");
 
   miniCartBtn.addEventListener("click", () => {
+    closeAllPopups();
     miniCart.classList.toggle("mini-cart--active");
     overlay.classList.toggle("overlay--visible");
   });

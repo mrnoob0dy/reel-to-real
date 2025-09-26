@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont.woff2") format("truetype-variations");
   font-weight: 400 700;
   font-size: normal;
-  src: url("../fonts/Inter-VariableFont.ttf") format("truetype-variations");
 }
 
 @font-face {
   font-family: "Bebas";
-  src: url("../../fonts/BebasNeue-Regular.woff2") format("woff2");
-  font-style: normal;
+  src: url("../fonts/BebasNeue-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
 }

@@ -14,6 +14,7 @@
   &__input {
     width: 100%;
     color: var(--color-primary);
+    padding-left: 52px;
 
     &::placeholder {
       font-family: var(--font-family);
@@ -25,6 +26,10 @@
   }
 
   &__icon {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 18px;
     aspect-ratio: 1;
   }

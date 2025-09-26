@@ -11,10 +11,6 @@
   border-right: 1px solid var(--color-neutral-muted);
   transition: 0.3s color ease-in;
 
-  &:first-child {
-    padding-left: 0;
-  }
-
   &:focus {
     outline: none;
   }
@@ -39,6 +35,7 @@
   align-self: center;
   width: 16px;
   height: 10px;
+  object-fit: cover;
 }
 
 .header-btn__angel {

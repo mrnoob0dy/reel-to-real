@@ -1,3 +1,5 @@
+import { closeAllPopups } from "../functions/closeAllPopups.js";
+
 const search = document.querySelector(".header-search");
 
 if (search) {
@@ -5,6 +7,8 @@ if (search) {
   const searchResult = document.querySelector(".search-result");
 
   searchInput.addEventListener("input", e => {
+    closeAllPopups();
+
     if (e.currentTarget.value.length > 0) {
       searchResult.classList.add("search-result--visible");
     } else {

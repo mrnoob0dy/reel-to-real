@@ -10,8 +10,9 @@ if (megamenus.length) {
   headerBtns.forEach(el => {
     if (el.classList.contains("header__catalog")) {
       el.addEventListener("click", e => {
+        const isMenuVisible = catalogMenu.classList.contains("megamenu--visible");
         closeAllPopups();
-        if (!catalogMenu.classList.contains("megamenu--visible")) {
+        if (!isMenuVisible) {
           catalogMenu.classList.add("megamenu--visible");
           e.currentTarget.classList.add("header-btn--active");
         } else {
@@ -23,8 +24,9 @@ if (megamenus.length) {
 
     if (el.classList.contains("header__collections")) {
       el.addEventListener("click", e => {
+        const isMenuVisible = collectionsMenu.classList.contains("megamenu--visible");
         closeAllPopups();
-        if (!collectionsMenu.classList.contains("megamenu--visible")) {
+        if (!isMenuVisible) {
           collectionsMenu.classList.add("megamenu--visible");
           e.currentTarget.classList.add("header-btn--active");
         } else {

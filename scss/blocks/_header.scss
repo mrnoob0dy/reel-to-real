@@ -5,18 +5,18 @@
 }
 
 .header__top {
-  padding: 28px 0;
+  padding: 21px 0;
   border-bottom: 1px solid var(--color-neutral-muted);
   background-color: var(--color-surface-default);
 }
 
 .header__container {
-  gap: 32px;
   display: flex;
   align-items: center;
 }
 
 .header__logo {
+  margin-right: 32px;
   font-family: var(--second-family);
   font-size: 32px;
   line-height: 120%;
@@ -92,4 +92,8 @@
   &:hover {
     color: var(--color-accent);
   }
+}
+
+.header__catalog {
+  margin-left: calc(-1 * var(--gap));
 }

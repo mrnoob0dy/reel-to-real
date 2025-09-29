@@ -1,0 +1,67 @@
+.products-tabs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 8px;
+}
+
+.products-tabs__btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 447px;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 122%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-primary);
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    color: var(--color-surface-default);
+    background-color: var(--color-primary);
+
+    .products-tabs__btn-quantity {
+      color: var(--color-surface-default);
+    }
+  }
+
+  &:active {
+    color: var(--color-surface-default);
+    background-color: var(--color-primary-active);
+
+    .products-tabs__btn-quantity {
+      color: var(--color-surface-default);
+    }
+  }
+
+  &--active {
+    color: var(--color-surface-default);
+    background-color: var(--color-primary);
+    pointer-events: none;
+
+    .products-tabs__btn-quantity {
+      color: var(--color-surface-default);
+    }
+  }
+}
+
+.products-tabs__btn-quantity {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-secondary);
+  transition: color 0.3s ease-in;
+}

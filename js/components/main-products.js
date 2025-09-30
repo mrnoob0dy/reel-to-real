@@ -1,21 +1,39 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
 
-const mainProductsSlider = document.querySelector(".products__slider");
+const mainProductsInner = document.querySelectorAll(".products__inner");
+const mainProductsTabsBtns = document.querySelectorAll(".products-tabs__btn");
 
-if (mainProductsSlider) {
-  const swiper = new Swiper(mainProductsSlider, {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    loop: true,
-    watchSlidesProgress: true,
+if (mainProductsInner.length) {
+  mainProductsTabsBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      const activeTab = e.currentTarget.dataset.tab;
+      mainProductsTabsBtns.forEach(item => {
+        item.classList.remove("products-tabs__btn--active");
+        e.currentTarget.classList.add("products-tabs__btn--active");
 
-    navigation: {
-      nextEl: ".products__slider-btn--next",
-      prevEl: ".products__slider-btn--prev",
-    },
+        mainProductsInner.forEach(inner => {
+          inner.classList.remove("products__inner--active");
+        });
+        document.querySelector(`.products__inner[data-target="${activeTab}"]`).classList.add("products__inner--active");
+      });
+    });
+  });
 
-    scrollbar: {
-      el: ".products__scrollbar",
-    },
+  mainProductsInner.forEach(inner => {
+    const swiper = new Swiper(inner.querySelector(".products__slider"), {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      watchSlidesProgress: true,
+
+      navigation: {
+        nextEl: inner.querySelector(".products__slider-btn--next"),
+        prevEl: inner.querySelector(".products__slider-btn--prev"),
+      },
+
+      scrollbar: {
+        el: inner.querySelector(".products__scrollbar"),
+      },
+    });
   });
 }

@@ -19,6 +19,14 @@
     padding: 8px;
   }
 
+  &__inner {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
   &__slider {
     margin: -20px;
     padding: 20px;
@@ -69,5 +77,6 @@
   .swiper-scrollbar-drag {
     border-radius: 0 !important;
     background-color: var(--color-secondary) !important;
+    width: 30% !important;
   }
 }

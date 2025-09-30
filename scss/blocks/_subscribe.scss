@@ -1,0 +1,38 @@
+.subscribe {
+  padding: 64px 0;
+  background-color: var(--color-surface-default);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.subscribe__title {
+  margin-bottom: 12px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 120%;
+  color: var(--color-primary);
+}
+
+.subscribe__desc {
+  margin-bottom: 40px;
+  max-width: 465px;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.subscribe__input {
+  width: 500px;
+  height: 60px;
+}

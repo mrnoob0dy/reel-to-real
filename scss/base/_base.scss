@@ -62,3 +62,9 @@ body {
 .simplebar-content::before {
   display: none;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+}

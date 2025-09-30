@@ -1,0 +1,130 @@
+.footer {
+  background-color: var(--color-primary);
+  padding: 64px 0 24px;
+
+  &__col {
+    grid-column: 3 span;
+  }
+
+  &__top {
+    margin-bottom: 100px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.footer__logo {
+  position: relative;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-surface-default);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0px;
+    height: 1.5px;
+    background-color: var(--color-surface-default);
+    transition: 0.3s ease-in;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.footer__title {
+  margin-bottom: 32px;
+  font-family: var(--second-family);
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-surface-default);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__item {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-surface-default);
+}
+
+.footer__link {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-surface-default);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0px;
+    height: 1.5px;
+    background-color: var(--color-surface-default);
+    transition: 0.3s ease-in;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.footer__copy {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-secondary);
+}
+
+.footer__bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer__bottom-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-secondary);
+  transition: color 0.3s ease-in;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0px;
+    height: 1.5px;
+    background-color: var(--color-surface-default);
+    transition: 0.3s ease-in;
+  }
+
+  &:hover {
+    color: var(--color-surface-default);
+    &::before {
+      width: 100%;
+    }
+  }
+}

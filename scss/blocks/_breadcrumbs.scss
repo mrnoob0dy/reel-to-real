@@ -1,0 +1,31 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__item {
+    &:not(:last-child) {
+      .breadcrumbs__link {
+        &::after {
+          content: "/";
+          color: var(--color-secondary);
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 122%;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+
+    &[href] {
+      color: var(--color-primary);
+    }
+  }
+}

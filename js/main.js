@@ -7,3 +7,4 @@ import "./components/loop-scroll.js";
 import "./components/main-products.js";
 import "./components/cookie.js";
 import "./components/to-top.js";
+import "./components/catalog-filters.js";

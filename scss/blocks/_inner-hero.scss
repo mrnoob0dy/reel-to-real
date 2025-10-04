@@ -1,0 +1,13 @@
+.inner-hero {
+  padding-top: var(--gap);
+  padding-bottom: 64px;
+
+  &__title {
+    margin-top: 60px;
+    font-family: var(--second-family);
+    font-size: 100px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+}

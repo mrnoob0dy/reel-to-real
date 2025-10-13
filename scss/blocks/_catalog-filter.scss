@@ -81,4 +81,29 @@
     flex-direction: column;
     gap: 16px;
   }
+
+  &__price {
+    margin-top: 20px;
+  }
+
+  &__price-inputs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    &-divider {
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--color-secondary);
+    }
+  }
+
+  &__price-range {
+    height: 12px;
+    display: flex;
+    align-items: center;
+  }
 }

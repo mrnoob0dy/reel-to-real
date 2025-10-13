@@ -8,3 +8,4 @@ import "./components/main-products.js";
 import "./components/cookie.js";
 import "./components/to-top.js";
 import "./components/catalog-filters.js";
+import "./components/price-range.js";

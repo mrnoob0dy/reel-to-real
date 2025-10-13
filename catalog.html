@@ -6,6 +6,13 @@
     <title>REEL TO REAL | Каталог</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css"
+      integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -625,9 +632,7 @@
                 <ul class="catalog-filter">
                   <li class="catalog-filter__block catalog-filter__block--open">
                     <h4 class="catalog-filter__title">Бренды</h4>
-                    <button class="catalog-filter__btn" aria-label="Открыть блок фильтра">
-
-                    </button>
+                    <button class="catalog-filter__btn" aria-label="Открыть блок фильтра"></button>
                     <div class="catalog-filter__inner">
                       <ul class="catalog-filter__items">
                         <li class="catalog-filter__item">
@@ -645,11 +650,9 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="catalog-filter__block">
+                  <li class="catalog-filter__block catalog-filter__block--open">
                     <h4 class="catalog-filter__title">Цена</h4>
-                    <button class="catalog-filter__btn" aria-label="Открыть блок фильтра">
-
-                    </button>
+                    <button class="catalog-filter__btn" aria-label="Открыть блок фильтра"></button>
                     <div class="catalog-filter__inner">
                       <ul class="catalog-filter__items">
                         <li class="catalog-filter__item">
@@ -671,6 +674,16 @@
                           </label>
                         </li>
                       </ul>
+                      <div class="catalog-filter__price">
+                        <div class="catalog-filter__price-inputs">
+                          <input type="number" min="0" max="10000" step="1" placeholder="0" class="catalog-filter__price-input catalog-filter__price-input--min small-input">
+                          <span class="catalog-filter__price-divider">-</span>
+                          <input type="number" min="0" max="10000" step="1" placeholder="10000" class="catalog-filter__price-input catalog-filter__price-input--max small-input">
+                        </div>   
+                        <div class="catalog-filter__price-range">
+                          <div class="price-range"></div>
+                        </div>                  
+                      </div>                     
                     </div>
                   </li>
                 </ul>
@@ -755,6 +768,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"
+      integrity="sha512-g/feAizmeiVKSwvfW0Xk3ZHZqv5Zs8PEXEBKzL15pM0SevEvoX8eJ4yFWbqakvRj7vtw1Q97bLzEpG2IVWX0Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>

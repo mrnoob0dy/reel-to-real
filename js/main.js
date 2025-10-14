@@ -9,3 +9,4 @@ import "./components/cookie.js";
 import "./components/to-top.js";
 import "./components/catalog-filters.js";
 import "./components/price-range.js";
+import "./components/custom-select.js";

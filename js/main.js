@@ -10,3 +10,5 @@ import "./components/to-top.js";
 import "./components/catalog-filters.js";
 import "./components/price-range.js";
 import "./components/custom-select.js";
+import "./components/product-slider.js";
+import "./components/products-popups.js";

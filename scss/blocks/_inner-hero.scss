@@ -2,6 +2,10 @@
   padding-top: var(--gap);
   padding-bottom: 64px;
 
+  &--product {
+    padding-bottom: 24px;
+  }
+
   &__title {
     margin-top: 60px;
     font-family: var(--second-family);
